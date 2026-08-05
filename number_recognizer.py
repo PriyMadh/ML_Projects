@@ -44,7 +44,8 @@ print("Type of y:", type(y_train))
 print("Feature matrix (X) shape:", X_train.shape)  # Expected: (42000, 784)
 print("Target array (y) shape:", y_train.shape)  # Expected: (42000,)
 
-test_csv_path = "/Users/priyanmadhani/Downloads/digit-recognizer/test.csv"
+#test_csv_path = "/Users/priyanmadhani/Downloads/digit-recognizer/test.csv"
+test_csv_path = "test.csv"
 test_df = pd.read_csv(test_csv_path)
 X_test_raw = test_df.to_numpy()
 X_test = X_test_raw / 255.0
